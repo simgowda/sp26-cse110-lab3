@@ -188,9 +188,11 @@ section:has(img) {
   background-color: rgba(255, 230, 248, 0.85);
 }
 
-/* Nested selectors, made valid for validator */
-main h2 {
-  color: #8a3ab9;
+/* Nested selectors, catches error with validator */
+main {
+  h2 {
+    color: #8a3ab9;
+  }
 }
 
 /* Relative units */
