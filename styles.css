@@ -1,0 +1,237 @@
+/* External stylesheet */
+
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+/* CSS variables with fallback */
+:root {
+  --bg-main: #fff4fb;
+  --card-bg: rgb(255, 245, 252);
+  --main-text: hsl(287, 28%, 24%);
+  --accent: hotpink;
+  --accent-soft: rgba(255, 105, 180, 0.15);
+  --border-main: color-mix(in srgb, pink 50%, purple 50%);
+  --wide-color: color(display-p3 0.85 0.55 0.95);
+}
+
+/* Universal selector */
+* {
+  box-sizing: border-box;
+}
+
+/* Element selector */
+body {
+  margin: 0;
+  background-color: var(--bg-main, lavenderblush);
+  color: var(--main-text, purple);
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+}
+
+/* Element selector */
+header {
+  background-color: #f8ddff;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+}
+
+/* ID selector */
+#title {
+  text-align: center;
+  text-decoration: underline;
+  color: var(--wide-color, orchid);
+  margin-bottom: 12px;
+}
+
+/* Class selector */
+.card {
+  background-color: var(--card-bg, white);
+}
+
+/* Selector list */
+h1, h2, legend {
+  color: #9c4dcc;
+}
+
+/* Text */
+p {
+  text-align: left;
+  color: #5a4266;
+  text-decoration: none;
+  line-height: 18pt;
+}
+
+/* Longhand margin, padding, border */
+section {
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  border-style: solid;
+  border-color: var(--border-main, plum);
+  border-width: 2px;
+  border-radius: 14px;
+  width: 85%;
+  max-width: 900px;
+  min-width: 280px;
+}
+
+/* Shorthand margin, padding, border */
+footer {
+  margin: 1rem auto 1rem auto;
+  padding: 1rem 1rem 1rem 1rem;
+  border: 2px solid #e5b4ff;
+  border-radius: 12px;
+  width: 85%;
+  text-align: center;
+  position: relative;
+}
+
+/* Attribute selector */
+[data-priority="high"] {
+  background-color: var(--accent-soft, pink);
+}
+
+/* Descendant combinator */
+nav a {
+  color: purple;
+}
+
+/* Child combinator */
+form > fieldset {
+  background-color: #fff8fd;
+}
+
+/* General sibling combinator */
+h2 ~ ul {
+  background-color: hsla(300, 60%, 90%, 0.45);
+  padding: 0.75rem;
+  border-radius: 10px;
+}
+
+/* Adjacent sibling combinator */
+h2 + p {
+  color: #6a4a78;
+}
+
+/* Combining two selectors */
+section.card {
+  background-color: #fff7fd;
+}
+
+/* Attribute selectors */
+input[type="text"] {
+  border: 2px solid #d97bff;
+}
+
+input[type="date"] {
+  border: 2px solid rgb(210, 130, 255);
+}
+
+source[type="audio/mpeg"] {
+  background-color: pink;
+}
+
+/* Pseudo-class selectors */
+a:hover {
+  color: hotpink;
+}
+
+button:active {
+  background-color: #f7c3ff;
+}
+
+/* Display */
+strong {
+  display: inline;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+button {
+  display: inline-block;
+}
+
+summary {
+  display: block;
+}
+
+/* Flexbox */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+/* Grid */
+fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+/* :has() */
+section:has(img) {
+  background-color: rgba(255, 230, 248, 0.85);
+}
+
+/* Nested selectors */
+main {
+  & h2 {
+    color: #8a3ab9;
+  }
+}
+
+/* Relative units */
+main {
+  width: 90%;
+  padding: 1em;
+}
+
+nav {
+  font-size: 1.05rem;
+}
+
+video {
+  width: 20rem;
+  max-width: 100%;
+}
+
+/* Absolute units */
+audio {
+  width: 300px;
+}
+
+img {
+  border-width: 2mm;
+  border-style: solid;
+  border-color: pink;
+}
+
+/* Media query */
+@media (max-width: 768px) {
+  fieldset {
+    grid-template-columns: 1fr;
+  }
+
+  section,
+  footer {
+    width: 95%;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}

@@ -5,12 +5,23 @@
   <title>Team 24 Meeting Minutes</title>
   <meta name="description" content="Meeting minutes for CSE 110 team 24">
   <link rel="icon" href="screenshots/pinkcomputer.png">
+
+  <!-- external stylesheet link -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- internal style block -->
+  <style>
+    hr {
+      border: 2px solid pink;
+      width: 85%;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Team 24's First Meeting!</h1>
+  <h1 id="title">Team 24's First Meeting!</h1>
   <p><strong>Date:</strong> April 12, 2026</p>
   <nav>
     <a href="#attendance">Attendance</a> |
@@ -24,7 +35,7 @@
 
 <main>
 
-<section id="attendance">
+<section id="attendance" class="card" data-priority="high">
   <h2>Attendance</h2>
   <ul>
     <li><strong>Simar</strong></li>
@@ -33,7 +44,7 @@
   </ul>
 </section>
 
-<section id="agenda">
+<section id="agenda" class="card">
   <h2>Agenda</h2>
   <ol>
     <li>Discuss project</li>
@@ -42,12 +53,13 @@
   </ol>
 </section>
 
-<section id="unfinished">
+<section id="unfinished" class="card">
   <h2>Unfinished Business</h2>
-  <p>Need to discuss project and designate roles.<br>Will focus on this in the coming meetings!</p>
+  <!-- inline style -->
+  <p style="color: purple;">Need to discuss project and designate roles.<br>Will focus on this in the coming meetings!</p>
 </section>
 
-<section id="new">
+<section id="new" class="card">
   <h2>New Business</h2>
   <p>We finalized our joint availabilities:</p>
   <ul>
@@ -56,31 +68,31 @@
   </ul>
 </section>
 
-<section>
+<section class="card">
   <h2>Miscellaneous Concerns & Questions</h2>
   <p>Team Member 1 asked: when will roles be assigned for the project?</p>
 </section>
 
-<section>
+<section class="card">
   <h2>Diagram</h2>
   <img src="screenshots/lab2diagram.jpg" alt="Important Diagram" width="300">
 </section>
 
-<section>
+<section class="card">
   <h2>Audio Recording</h2>
   <audio controls>
     <source src="screenshots/audiolab2.mp3" type="audio/mpeg">
   </audio>
 </section>
 
-<section>
+<section class="card">
   <h2>Video Recording</h2>
   <video controls width="300">
     <source src="screenshots/videolab2.mp4" type="video/mp4">
   </video>
 </section>
 
-<section>
+<section class="card">
   <h2>Extra Notes</h2>
   <details>
     <summary>Click to expand</summary>
@@ -88,11 +100,11 @@
   </details>
 </section>
 
-<section>
+<section class="card">
   <h2>Preference Form</h2>
 
   <form>
-    <fieldset>
+    <fieldset class="form-grid">
       <legend>Preference Form</legend>
 
       <label>Name:</label>
