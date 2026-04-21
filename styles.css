@@ -190,7 +190,7 @@ section:has(img) {
 
 /* Nested selectors */
 main {
-  & h2 {
+  h2 {
     color: #8a3ab9;
   }
 }
