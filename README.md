@@ -1,4 +1,4 @@
-# Lab 2 - Starter
+# Lab 3
 
 Website:
-https://simgowda.github.io/Lab2_Starter/
+https://simgowda.github.io/sp26-cse110-lab3
