@@ -93,6 +93,11 @@ footer {
   position: relative;
 }
 
+/* Explicit margin:auto example */
+img {
+  margin: auto;
+}
+
 /* Attribute selector */
 [data-priority="high"] {
   background-color: var(--accent-soft, pink);
@@ -154,7 +159,6 @@ strong {
 
 img {
   display: block;
-  margin: auto;
 }
 
 button {
@@ -212,6 +216,7 @@ video {
 /* Absolute units */
 audio {
   width: 300px;
+  height: 54px;
 }
 
 img {
